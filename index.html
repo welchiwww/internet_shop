@@ -18,49 +18,83 @@
 
     <div class="wrapper">
         <header class="header">
-            <div class="header-top">
+            <div class="header-top py-2">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="header-top-phone">
-                                <i class="fa-solid fa-phone"><a class="tel_number" href="tel:+79123456789">+7(951)-234-56-78</a></i>
+                        <div class="col-6 col-sm-4">
+                            <div class="header-top-phone d-flex align-items-center h-100">
+                                <i class="fa-solid fa-phone"><a class="tel_number"
+                                        href="tel:+79123456789">+7(951)-234-56-78</a></i>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 d-none d-sm-block">
                             <ul class="social d-flex justify-content-center">
-                                <li><a href="#"><i class="fa-brands fa-vk social_icon"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-telegram social_icon"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-youtube social_icon"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-vk"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-4">
-                            
-                            <div class="btn-group d-flex justify-content-end" role="group" aria-label="Basic">
+                        <div class="col-6 col-sm-4">
+
+                            <div class="btn-group d-flex justify-content-end align-items-center h-100" role="group"
+                                aria-label="Basic">
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Действия
+                                    <button class="btn dropdown-toggle btn-sm me-2" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Действия
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Аккаунт</a></li>
-                                      <li><a class="dropdown-item" href="#">Войти</a></li>
-                                      <li><a class="dropdown-item" href="#">Регистрация</a></li>
+                                        <li><a class="dropdown-item" href="#">Аккаунт</a></li>
+                                        <li><a class="dropdown-item" href="#">Войти</a></li>
+                                        <li><a class="dropdown-item" href="#">Регистрация</a></li>
                                     </ul>
                                 </div>
                                 <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Language
+                                    <button class="btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Language
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">RU</a></li>
-                                      <li><a class="dropdown-item" href="#">EN</a></li>
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                        <li><a class="dropdown-item" href="#">EN</a></li>
                                     </ul>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div><!-- header-top -->
+            <div class="header-middle py-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="./index.html" class="header-logo h1">Shop+</a>
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Введите данные для поиска"
+                                        name="search" aria-label="Поиск" aria-describedby="button-search">
+                                    <button class="btn btn-secondary" type="button" id="button-search">Найти</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="btn">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+
+                            <button class="btn" type="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div style="height: 100px; background-color: white;" class="container-fluid">Middle</div>
         </header>
         <main class="main">Content</main>
         <footer class="footer">Footer</footer>

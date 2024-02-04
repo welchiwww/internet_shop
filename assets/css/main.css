@@ -1,8 +1,8 @@
 :root{
     --bg-color:#dcdcdc;
     --text-color: #6c757d;
-    --accent-color: #6600ff;
-    --c-color: #6600ff;
+    --accent-color: #FDEAA8;
+    --contrast-color: #9370D8;
 }
 /*-------------------------------------------------------Base--------------------------------------------------------------------*/
 
@@ -27,6 +27,33 @@ main.main{
     flex: 1 1 auto;
 
 }
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.form-control{
+    color: var(--text-color);
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: var(--contrast-color);
+}
+.btn:focus{
+    border-color: var(--contrast-color);
+    box-shadow: none;
+}
 
 /*-------------------------------------------------------Base--------------------------------------------------------------------*/
 
@@ -36,14 +63,62 @@ a.tel_number{
 }
 
 i.social_icon{
-    font-size: 200%;
+    font-size: 150%;
 }
 
 ul.social{
     list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+ul.social li{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+ul.social a{
+    font-size: 150%;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    line-height: 35px;
+    transition: all .3s;
+
+}
+ul.social a:hover{
+    background-color: var(--contrast-color);
+    color: var(--accent-color);
 }
 
 
+
+.header-top-phone a{
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.header-top-phone a:hover{
+    color: var(--contrast-color);
+}
+
+.header-top .btn{
+    background-color: var(--bg-color);
+}
+
+.header-logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    transition: all .3s;
+}
+.header-logo:hover{
+    color: var(--contrast-color);
+}
 
 
 /*-------------------------------------------------------Header--------------------------------------------------------------------*/
